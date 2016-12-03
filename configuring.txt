@@ -1,0 +1,28 @@
+ $(OPENCV_DIR)\include
+
+$(OPENCV_DIR)\x86\vc11\lib
+
+
+1.create -> "New Project "--->win32 console application
+2.Choose 'All Configurations' ->configuration properties->c/c++->general->Additional Include Directories->paste $(OPENCV_DIR)\include 
+3.Choose "linker "->General->Additional Library Directories->paste $(OPENCV_DIR)\x86\vc11\lib 
+4.Choose "linker"->Input->Additional Dependencies-><edit..>and copy the following directories
+opencv_calib3d2413d.lib
+opencv_contrib2413d.lib
+opencv_core2413d.lib
+opencv_features2d2413d.lib
+opencv_flann2413d.lib
+opencv_gpu2413d.lib
+opencv_highgui2413d.lib
+opencv_imgproc2413d.lib
+opencv_legacy2413d.lib
+opencv_ml2413d.lib
+opencv_nonfree2413d.lib
+opencv_objdetect2413d.lib
+opencv_ocl2413d.lib
+opencv_photo2413d.lib
+opencv_stitching2413d.lib
+opencv_superres2413d.lib
+opencv_ts2413d.lib
+opencv_video2413d.lib
+opencv_videostab2413d.lib
